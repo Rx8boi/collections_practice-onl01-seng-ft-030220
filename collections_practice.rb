@@ -38,7 +38,7 @@ end
 
 def add_s(array)
   s_array = []
-  array.each do |word|word.split"" if  array[1]
+  array.each do |word|word.split"" if array.index >1 or <1
     word[-1] = "s"
     s_array << array.join
   end
