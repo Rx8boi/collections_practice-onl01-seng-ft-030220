@@ -36,10 +36,20 @@ def kesha_maker(array)
 end
 
 
+def find_a(array)
+  array.select{|word| word.start_with?("a")}
+end
+
+def sum_array(integers)
+  integers.inject{|sum, n| sum + n}
+end
+
 def add_s(array)
-  s_array = []
-  array.each do |word|word.split"" if array.index >1 or <1
-    word[-1] = "s"
-    s_array << array.join
+  array.each_with_index.collect do |string, index|
+    if index == 1
+      string
+    else
+      string << "s"
+    end
   end
 end
