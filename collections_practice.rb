@@ -28,10 +28,10 @@ def reverse_array(array)
 end
 
 def kesha_maker(array)
-  array.new = []
+  dollar = []
   array.each do |word| word.split("")
-    puts array.length+"$"
-    word.join("")
+    array[2] = "$"
+    dollar << array.join
   end
 end
 
