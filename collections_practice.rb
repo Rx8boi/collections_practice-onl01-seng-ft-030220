@@ -34,8 +34,3 @@ def kesha_maker(array)
     dollar << array.join
   end
 end
-
-def find_a(array)
-  array.select do |word|
-    word
-end
