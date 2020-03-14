@@ -39,9 +39,11 @@ def find_a(array)
   
 
 def add_s(array)
-  s_array = []
-  array.each do |word|word.split"" if != array[1]
-    word[-1] = "s"
-    s_array << array.join
+  array.each_with_index.collect do |string, index|
+    if index == 1
+      string
+    else
+      string << "s"
+    end
   end
 end
