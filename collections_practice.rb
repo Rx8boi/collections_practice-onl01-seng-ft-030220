@@ -37,8 +37,8 @@ end
 
 
 def add_s(array)
-  dollar = []
+  s_array = []
   array.each do |word|word.split""
     word[-1] = "s"
-    dollar << array.join
+    s_array << array.join
 end
