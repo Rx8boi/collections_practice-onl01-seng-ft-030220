@@ -34,3 +34,16 @@ def kesha_maker(array)
     dollar << array.join
   end
 end
+
+def find_a(array)
+end
+
+def sum_array(array)
+end
+
+def add_s(array)
+  dollar = []
+  array.each do |word|word.split""
+    word[-1] = "s"
+    dollar << array.join
+end
