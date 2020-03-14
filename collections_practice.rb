@@ -35,10 +35,12 @@ def kesha_maker(array)
   end
 end
 
+def find_a(array)
+  
 
 def add_s(array)
   s_array = []
-  array.each do |word|word.split""
+  array.each do |word|word.split"" if != array[2]
     word[-1] = "s"
     s_array << array.join
   end
