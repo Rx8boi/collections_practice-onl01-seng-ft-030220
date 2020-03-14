@@ -40,7 +40,7 @@ def find_a(array)
 
 def add_s(array)
   s_array = []
-  array.each do |word|word.split"" if != array[2]
+  array.each do |word|word.split"" if != array[1]
     word[-1] = "s"
     s_array << array.join
   end
