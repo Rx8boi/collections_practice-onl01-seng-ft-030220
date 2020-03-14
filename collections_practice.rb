@@ -41,4 +41,5 @@ def add_s(array)
   array.each do |word|word.split""
     word[-1] = "s"
     s_array << array.join
+  end
 end
